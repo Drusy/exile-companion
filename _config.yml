@@ -1,0 +1,86 @@
+app_name: Exile Companion (PoE)
+app_subtitle: Unofficial Path of Exile Helper
+app_download: https://apps.apple.com/app/id1457210391
+app_github: 
+app_id: 1457210391
+email: kevin.renella@gmail.com
+app_icon: /assets/icon.png
+favicon: /assets/icon.png
+
+made_by: Made by [Drusy](https://github.com/drusy)
+
+links:
+  - title: Donation
+    url: https://paypal.me/kevinrenella
+  - title: Clash Mini Companion
+    url: https://drusy.github.io/clash-mini-companion
+  - title: Vampire Survivors Companion
+    url: https://drusy.github.io/vampire-survivors-companion
+
+app_description: |
+    Unofficial PoE companion app.
+    
+    ## Features
+    
+    Add favorite characters
+    - Display class and level progress
+    - Get notifications of your friends level up
+    - Check the items and gem setup of any public character
+
+    <br />Monitor the ladder of every league.<br /><br />
+    
+    Display the game items by category and their price on the market
+    - Price in chaos & exalted
+    - Search items
+    - Display the charts of a specific item (mean/median/mode/daily index)
+    - View special microtransactions offers and be notified on new deals available
+    - Favorite an item and configure it (custom tag / notification price)
+    - Get notification for an item goal price  
+    
+    <br />Available realm: PC (default), Sony, Xbox.
+
+    ## Disclaimer
+    
+    This app is not the official PoE application and is not related to Grinding Gear Games. It uses public and free APIs from different sources.
+    
+    ## API Sources
+    
+    Ladder & Character API from the official PoE website: https://www.pathofexile.com/developer/docs/api-resources
+
+    Items API from PoE Watch: https://poe.watch/api
+
+####################################################
+### Jekyll Configuration. No need to touch this. ###
+####################################################
+
+plugins:
+  - jekyll-postcss
+
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+
+include: ["node_modules/tailwindcss"]
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package-lock.json
+  - README.md
+  - postcss.config.js
+  - .gitignore
+  - node_modules
+
+markdown: kramdown
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope:
+      path: "assets/screenshots"
+    values:
+      screenshot: true
